@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Calculator</title>
   <link href="styles.css" rel="stylesheet" />
-  <script src="app.js" defer></script>
+  <script src="app1.js" defer></script>
 </head>
 
 <body>
@@ -15,29 +15,41 @@
       <h1>Калькулятор</h1>
     </div>
     <div class="workArea">
+    
       <div class="btnGrid" id="btnList">
+      <div class="item">
         <input class="result" id="result" value="0" readonly />
+      </div>
+      <div class="item">
         <input class="btn" id="btn7" type="button" data-type="number" value="7" />
         <input class="btn" id="btn8" type="button"  data-type="number" value="8" />
         <input class="btn" id="btn9" type="button"  data-type="number" value="9" />
         <input class="btn" id="btnPlus" type="button" data-type="operation" value="+" />
+      </div>
+      <div class="item">
         <input class="btn" id="btn4" type="button"  data-type="number" value="4" />
         <input class="btn" id="btn5" type="button"  data-type="number" value="5" />
         <input class="btn" id="btn6" type="button"  data-type="number" value="6" />
         <input class="btn" id="btnMinus" type="button" data-type="operation" value="-" />
+      </div>
+      <div class="item">
         <input class="btn" id="btn1" type="button"  data-type="number" value="1" />
         <input class="btn" id="btn2" type="button"  data-type="number" value="2" />
         <input class="btn" id="btn3" type="button"  data-type="number" value="3" />
         <input class="btn" id="btnMultiply" type="button" data-type="operation" value="x" />
+      </div>
+      <div class="item">
         <input class="btn" id="btn0" type="button"  data-type="number" value="0" />
         <input class="btn" id="btnClean" type="button" data-type="operation" value="C" />
         <input class="btn" id="btnEquals" type="button" data-type="operation" value="=" />
         <input class="btn" id="btnDivide" type="button" data-type="operation" value=":" />
+      </div>
     </div>
-    <div>
+    
+    <div class="operationList">
       <p>Журнал операций</p>
       <!--<input class="listResult" value="поле для вывода результата" readonly />-->
-      <textarea class="listResult" id="listResult" readonly>аппппп</textarea>
+      <textarea class="listResult" id="listResult" readonly>Список операций</textarea>
     </div>
 
     </div>
