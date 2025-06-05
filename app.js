@@ -27,8 +27,9 @@ btnList.addEventListener("click", (e) => {
   // } else if (btnType === "clean") {
   //   clean();
   // }
-  handleClickBtn(e.target);
   navigator.vibrate(2000);
+  handleClickBtn(e.target);
+  
   console.log("пошагово", calculator);
 });
 
