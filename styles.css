@@ -3,43 +3,49 @@
 
 body {
     background-color: rgb(31, 4, 48);
-   /* font-size: 16px;
+    /* font-size: 16px;
     font-family: "Roboto", sans-serif;
     font-weight: normal;*/
     font-family: "Arsenal SC", serif;
-  font-weight: 400;
-  font-style: normal;
+    font-weight: 400;
+    font-style: normal;
     color: rgb(31, 4, 48);
+    min-height: 320px;
 
 }
-.container{
+
+.container {
     display: flex;
     flex-direction: column;
     max-width: 750px;
-    height: 97vh;
+    height: 97.5vh;
     margin: auto;
     background-color: rgb(230, 230, 250);
     /*border-radius: 15px;*/
-    
 
 }
 
-.title{
+.title {
+    box-sizing: border-box;
+
     display: flex;
     justify-content: center;
-    box-shadow: 4px 4px 14px rgba(31, 4, 48, 0.25);
-    margin: 1%;
+    /* box-shadow: 4px 4px 14px rgba(31, 4, 48, 0.25);
+    margin: 1.5%;*/
+    height: 15%;
 }
 
-.workArea{
+.workArea {
     display: flex;
     box-sizing: border-box;
-    height: 100%;
-    
-   
+    margin: 0px;
+
+    flex-direction: row;
+    height: 85%;
 
 }
-.result{
+
+.result {
     width: 100%;
     box-sizing: border-box;
     text-align: right;
@@ -48,19 +54,22 @@ body {
     background-color: rgb(230, 230, 250);
     color: inherit;
     box-shadow: 4px 4px 14px rgba(31, 4, 48, 0.25);
-    
+
 }
 
-.btnGrid{
+.btnGrid {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
     width: 65%;
     margin: 1%;
     justify-content: space-around;
+
+
 }
 
-.operationList{
+.operationList {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -68,16 +77,29 @@ body {
     margin: 1%;
 }
 
-.item{
+.item {
     display: flex;
     box-sizing: border-box;
     height: 25%;
-    justify-content:space-between;
+    justify-content: space-between;
     margin: 1%;
     color: inherit;
 }
 
-.btn{
+.item1 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+   
+}
+ 
+#btnEquals {
+    width: 100%;
+}
+
+
+
+.btn {
     box-sizing: border-box;
     width: 22%;
     height: 100%;
@@ -92,15 +114,20 @@ body {
 
 }
 
-p{
+p {
     text-align: center;
     font-size: 130%;
-    
+    box-sizing: border-box;
+    margin: 3%;
+
+
 }
 
-.listResult{
+.listResult {
+    box-sizing: border-box;
+
     resize: none;
-    text-align: right;
+    text-align: left;
     font-size: 130%;
     background-color: rgb(230, 230, 250);
     border: none;
@@ -109,4 +136,63 @@ p{
 .listResult,
 .result:focus {
     outline: none;
+}
+
+
+.btn:hover {
+
+    background-color: rgb(219, 219, 246);
+}
+
+.btn:active {
+    background-color: rgb(208, 208, 246);
+}
+
+.actionList {
+    display: flex;
+
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 34%;
+    margin: 1%;
+    overflow-y: auto;
+
+}
+
+.listElement {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin-right: 3%;
+    margin-left: 3%;
+
+}
+
+#listResoults {
+    max-height: 95%;
+
+    box-sizing: border-box;
+    margin: 0.5%;
+    resize: none;
+    text-align: left;
+    font-size: 130%;
+    border: none;
+    overflow-y: auto;
+}
+
+#listResoults::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgb(219, 219, 246);
+}
+
+#listResoults::-webkit-scrollbar-thumb {
+    /*Ползунок*/
+    /*border-radius: 10px;*/
+    background-color: rgb(203, 199, 223);
+}
+
+#listResoults::-webkit-scrollbar-track {
+
+    border-radius: 10px;
+    background-color: rgb(230, 230, 250);
 }
